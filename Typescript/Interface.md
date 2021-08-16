@@ -26,3 +26,18 @@ let Amy = <Doctor>{
 	instrument: 'Scalpel'
 };
 ```
+
+## 强制类型转换
+```ts
+interface Per = {
+	name: string
+}
+ 
+let teacher = {};
+teacher.name = "tony"	// error
+(result as Per).name  = "tony"	//类型断言
+
+
+let doctor = <Per>{}
+doctor.name = "wang"
+```

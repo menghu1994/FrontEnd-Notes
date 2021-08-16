@@ -1,6 +1,6 @@
 # git
 
-## Angular git commit
+## git commit standard
  + type
   - bulid  -- 对构建系统或者外部依赖进行修改
   - ci    -- 对ci配置文件或脚本进行修改

@@ -2,7 +2,7 @@
 
 ![Angular running track](https://www.runoob.com/wp-content/uploads/2016/09/overview2.png)
 
-## 组件 
+## 组件
  - 处理数据和功能的组件类 .ts
   + @Component({
   	selector:'',  //选择器,标识组件
@@ -37,3 +37,6 @@
 
 ## Services 
  - 导入Injectable符号,并添加@Injectable()装饰器
+
+
+## Observable
