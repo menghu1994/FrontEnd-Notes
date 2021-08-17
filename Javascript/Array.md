@@ -38,3 +38,16 @@
   console.log(myArr.filter((value,index,arr)=>arr.indexOf(value)===index));
   //[ 1, 3, 4, 5, 6, 7 ]
  ```
+
+
+## Questions and solutions
+> 新建长度为7的数组,数组内元素默认值为3
+```js
+let arr1 = new Array(7).fill(3);    // [3,3,3,3,3,3,3]
+
+let arr2 = Array.apply(null, Array(7)).map(() => 3);    // [3,3,3,3,3,3,3]
+```
+> 新建长度为7的数组,数组内元素递增赋值
+```js
+let arr3 = new Array(7).fill(undefined).map( (_, index)=> index );    //[0,1,2,3,4,5,6]
+```

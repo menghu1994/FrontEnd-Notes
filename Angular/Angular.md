@@ -1,5 +1,34 @@
 # Angular
 
+## 命令行快速生成
+```powershell
+// 生成项目
+ng new <项目英文名>
+
+// 安装ng-zorro
+ng add ng-zorro-antd
+
+// 生成模块
+ng generate module <路径及模块名称>
+// 缩写,在app文件夹下生成路径为pages/setup的setup.module.ts文件
+ng g m pages/setup
+
+//生成组件
+ng generage component <路径及组件名称>
+// 缩写, 在app文件夹下生成路径为pages/setup的组件的模板、样式、测试文件、ts文件四个文件
+ng g c pages/setup
+
+// 生成服务
+ng generage service <路径及服务文件名称>
+// 缩写
+ng g s services/local-storage
+
+// 启动服务
+ng serve 
+或
+npm start 
+```
+
 ![Angular running track](https://www.runoob.com/wp-content/uploads/2016/09/overview2.png)
 
 ## 组件
