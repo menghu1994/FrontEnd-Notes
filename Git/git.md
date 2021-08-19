@@ -25,3 +25,8 @@
 	<BLANK LINE>
 <footer>
 ```
+
+### [git commit emoji](https://gitmoji.dev/)
+```git
+git commit -m ":tada: 礼花emoji"
+```

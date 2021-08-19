@@ -69,3 +69,26 @@ npm start
 
 
 ## Observable
+
+
+#### 事件绑定
+> $event.target 的类型只是 EventTarget。在 getValue() 方法中，把此目标转为 HTMLInputElement 类型，以允许对其 value 属性进行类型安全的访问
+```ts
+<input type="text" (input)="getValue($event)" />
+
+getValue(event: Event): string {
+   return (event.target as HTMLInputElement).value;
+}
+```
+
+#### ngForm 与 模板变量
+> 如果 itemForm.form.valid 无效，那么 NgForm 的 form 属性就会让你禁用提交按钮
+```ts
+<form #itemForm="ngForm">
+   <label>Name:</label>
+   <button>Submit</button>
+</form>
+
+<div [hidden]="!itemForm.form.valid">sub
+</div>
+```

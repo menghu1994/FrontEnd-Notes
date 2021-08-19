@@ -119,10 +119,71 @@ let b = new B();
 ```
 > 上面代码中，super.x赋值为3，这时等同于对this.x赋值为3。而当读取super.x的时候，读的是A.prototype.x，所以返回undefined。
 
+## public、 private、 protected
+|  修饰符   |  当前类  |  同包  |  子类  |  其它包  |
+|  ----     |   ----   |  ----  |  ----  |   ----   |
+|  public   |    √     |    √   |   √    |    √     |
+| protected |    √     |    √   |   √    |    ×     |
+|  default  |    √     |    √   |   ×    |    ×     |
+|  private  |    √     |    ×   |   ×    |    ×     |
+
+ 1. public, 公共的,被public修饰的类、方法、属性、可以跨类和跨包访问.
+ 2. protected, 受保护的,被protected修饰的类、方法、属性、只能被本类、本包、不同包的子类所访问.
+ 3. default, 默认的,在这种模式下,只能在同一个包内访问.
+ 4. private, 私有的,被private修饰的类、方法、属性、只能被本类的对象所访问.
+
+> 当构造函数修饰为 private 时, 该类不允许被继承或者实例化
+```ts
+class Animal {
+  public name;
+  private constructor(name) {
+    this.name = name;
+  }
+}
+
+class Cat extends Animal { }  // error
+let a = new Animal("tom")  //error
+```
+> 当构造函数修饰为 protected 时, 该类只允许被继承
+```ts
+class Animal {
+  public name;
+  protected constructor(name) {
+    this.name = name;
+  }
+}
+
+class Cat extends Animal { }  
+
+let a = new Animal("tom")  //error
+```
+
+### 参数属性
+> 修饰符和readonly还可以使用在构造函数参数中，等同于类中定义该属性同时给该属性赋值
+```ts
+class Animal {
+	// public name: string;
+	public constructor(public name){
+		// this.name = name;
+	}
+}
+```
+
+## 抽象类
+> abstract 用于定义抽象类和其中的抽象方法
+> 抽象类不允许被实例化
+> 抽象类中的抽象方法必须被子类实现
+
+
+
+
+
+
 
 
 
 - [1] [ECMAScript 6 入门](https://es6.ruanyifeng.com/#docs/class)
+- [2] [Typescript入门教程](https://ts.xcatliu.com/advanced/class.html#typescript-%E4%B8%AD%E7%B1%BB%E7%9A%84%E7%94%A8%E6%B3%95)
 
 
 
