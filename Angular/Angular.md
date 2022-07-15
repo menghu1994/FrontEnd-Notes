@@ -1,6 +1,7 @@
 # Angular
 
 ## 命令行快速生成
+
 ```powershell
 // 生成项目
 ng new <项目英文名>
@@ -32,47 +33,55 @@ npm start
 ![Angular running track](https://www.runoob.com/wp-content/uploads/2016/09/overview2.png)
 
 ## 组件
- - 处理数据和功能的组件类 .ts
-  + @Component({
-  	selector:'',  //选择器,标识组件
-  	templateUrl:'', //模板
-  	styleUrls:[] //样式
+
+- 处理数据和功能的组件类 .ts
+
+- @Component({
+   selector:'',  //选择器,标识组件
+   templateUrl:'', //模板
+   styleUrls:[] //样式
   })
- - 决定UI的HTML模板 .html
- - 定义外观的组件专属样式 .css
+
+- 决定UI的HTML模板 .html
+- 定义外观的组件专属样式 .css
 
  组件必须声明在一个`NgModule`中
 
 ## 语法
- - 判断 *ngIf   *ngIf="can; else cannot"
- - 循环 *ngFor  *ngFor="let item of items; index as i"
- - 绑定属性 [title] [style.color]
- - 绑定方法 (click)
+
+- 判断 *ngIf*ngIf="can; else cannot"
+- 循环 *ngFor*ngFor="let item of items; index as i"
+- 绑定属性 [title] [style.color]
+- 绑定方法 (click)
 
 ### 父子组件传值(单向)
- - 父 => 子 
+
+- 父 => 子
     子组件添加输入属性 @Input()  導入Input符號，添加@Input()装饰器
     父组件内组件中绑定属性和属性值
- - 子 => 父 
+- 子 => 父
     EventEmitter
 
 ### 数据双向绑定
+
 // 添加模块FromsModule才能使用
 [(ngModel)]
 
 ### 属性绑定
+
   class绑定 [class.selected]="hero == selectedHero"
   [hero]="selectedHero"
 
-## Services 
- - 导入Injectable符号,并添加@Injectable()装饰器
+## Services
 
+- 导入Injectable符号,并添加@Injectable()装饰器
 
 ## Observable
 
-
 #### 事件绑定
+
 > $event.target 的类型只是 EventTarget。在 getValue() 方法中，把此目标转为 HTMLInputElement 类型，以允许对其 value 属性进行类型安全的访问
+
 ```ts
 <input type="text" (input)="getValue($event)" />
 
@@ -82,7 +91,9 @@ getValue(event: Event): string {
 ```
 
 #### ngForm 与 模板变量
+
 > 如果 itemForm.form.valid 无效，那么 NgForm 的 form 属性就会让你禁用提交按钮
+
 ```ts
 <form #itemForm="ngForm">
    <label>Name:</label>
