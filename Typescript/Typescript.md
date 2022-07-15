@@ -44,3 +44,12 @@ function fullName(firstName: string, lastName: string = 'li'){  //lastName为被
 let x?: number;
 //  x 为 number 或 undefined
 ```
+
+### 实战
+
+[type-challenges](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md)
+
+
+### 参考
+
+[Typescript](https://wangtunan.github.io/blog/typescript/base.html#%E7%9B%AE%E5%BD%95)
