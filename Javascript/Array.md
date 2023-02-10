@@ -103,6 +103,52 @@ alert( arr.indexOf(NaN) ); // -1（错，应该为 0）
 alert( arr.includes(NaN) );// true（正确）
 ```
 
+## 类数组
+
+常见类数组有函数的剩余参数，
+`let arrayLike = document.querySelectorAll('div')`; dom列表
+
+> 类数组拥有`length`属性,且`length`属性的类型是`number`;
+
+```javascript
+// 判断类数组
+arrLike.length === +arrLike.length
+```
+
+```javascript
+// 类数组转数组
+Array.from(arrLike)
+
+Array.prototype.slice.call(arrLike)
+```
+
+> 如果我们在箭头函数中访问 `arguments`，访问到的 `arguments` 并不属于箭头函数，而是属于箭头函数外部的“普通”函数。
+
+```javascript
+function f() {
+  let showArg = () => alert(arguments[0]);
+  showArg();
+}
+
+f(1); // 1
+```
+
+## Spread
+
+```javascript
+// 求类型`Array<number>`中的最大值
+let arr = [1,2,3,4];
+let arr2 = [6,7,8]
+Math.max(arr) // error
+Math.max(...arr) // 4
+Math.max(...arr, ...arr2) // 8
+
+// 字符串转数组
+let str = 'string';
+[...str]  // ['s','t','r','i','n','g']
+Array.from(str)  // ['s','t','r','i','n','g']
+```
+
 ## Questions and solutions
 
 > 新建长度为7的数组,数组内元素默认值为3

@@ -41,3 +41,7 @@ git commit -m ":tada: 礼花emoji"
 #### Question
 
 1. [generate `.gitignore` file](Questions/gitignore.md)
+
+
+## 分支关联
+> git branch --set-upstream-to=origin/develop develop
