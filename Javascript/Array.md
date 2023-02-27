@@ -164,3 +164,48 @@ let arr2 = Array.apply(null, Array(7)).map(() => 3);    // [3,3,3,3,3,3,3]
 ```js
 let arr3 = new Array(7).fill(undefined).map( (_, index)=> index );    //[0,1,2,3,4,5,6]
 ```
+
+
+### reWrite methods
+```js
+Array.prototype.map = (callback) => {
+  const result = [];
+  this.forEach( (item, index) => {
+    result.push(callback(item, index))
+  } )
+  return result
+}
+
+Array.prototype.filter = (callback) => {
+  const result = [];
+  this.forEach( (item, index) => {
+    if (callback(item, index)) {
+      result.push(item)
+    }
+  })
+  return result
+}
+
+Array.prototype.concat = () => {
+  const result = [];
+  // apply
+  // this.forEach( (array) => {
+  //   result.push.apply(result, array)
+  // })
+
+  // ES6 spread
+  // this.forEach( (array) => {
+  //   result.push.apply(result, array)
+  // })
+
+  // two forEach
+  this.forEach( (array) => {
+    array.forEach( item => {
+      result.push()
+    })
+  })
+
+  return result
+}
+
+```

@@ -1,5 +1,8 @@
 # git
 
+## 查看所有分支
+`git remote -v`
+
 ## git commit standard
 
 + type

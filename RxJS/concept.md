@@ -25,6 +25,8 @@
 1. 函数是一等公民
  - 函数可以赋值给变量，可以作为参数或回调
 2. `Pure Function`
+ - 一个函数给予相同的参数，永远会有相同的返回值;
+ - `Side Effect` 函数副作用（如 http request, console, get input, query DOM）
 
 #### `Reactive Programming`
 
