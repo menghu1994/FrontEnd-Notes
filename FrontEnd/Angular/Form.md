@@ -21,6 +21,19 @@ formgroup.setValue({name:'xiaoming', age:'20'});
 formgroup.setValue({name:'xiaoming'});
 ```
 
+## Dynamic change validator need to update handly
+```ts
+	// reset
+    Object.keys(this.basicForm.controls).forEach(key => {
+      this.basicForm.get(key)!.setValidators(null);
+      this.basicForm.get(key)!.enable();
+    });
+    this.basicForm.get('a')!.patchValue(1);
+    this.basicForm.get('b')!.setValidators(Validators.required);
+    Object.keys(this.basicForm.controls).forEach(key => {
+      this.basicForm.get(key)!.updateValueAndValidity({ onlySelf: false });
+    });
+```
 
 
 ## Reference
