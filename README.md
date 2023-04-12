@@ -1,3 +1,24 @@
+---
+title:
+- type: main
+  text: FrontEnd Notes
+- type: subtitle
+  text: A book to know front end
+creator:
+- role: author
+  text: Luffy
+- role: editor
+  text: Luffy
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  My Press
+rights: © 2023 Luffy, CC BY-NC
+ibooks:
+  version: 0.0.1
+---
+
+
 # Normal Notes bulid by Normal person
 
 > 个人笔记
@@ -6,39 +27,39 @@
 
 ## 从零搭建webpack项目
 
-### [webpack](Webpack/ProjectInit.md)
+### [webpack](FrontEnd/Webpack/ProjectInit.md)
 
 ## 基本语法
 
-### [Javascript](Javascript/Javascript.md)
+### [Javascript](FrontEnd/Javascript/Javascript.md)
 
-### [Typescript](Typescript/Typescript.md)
+### [Typescript](FrontEnd/Typescript/Typescript.md)
 
 ## 前端框架
 
-### [Angular](Angular/Angular.md)
+### [Angular](FrontEnd/Angular/Angular.md)
 
-### [Uni-app](uni-app/uni-app.md)
+### [Uni-app](FrontEnd/uni-app/uni-app.md)
 
-### [Vue](Vue/vue.md)
+### [Vue](FrontEnd/Vue/vue.md)
 
-### [Applet](Applet/Cloud.md)
+### [Applet](FrontEnd/Applet/Cloud.md)
 
 ## 版本控制
 
-### [git](Git/git.md)
+### [git](FrontEnd/Git/git.md)
 
 ## 静态博客搭建
 
-### [markdown](markdown/md.md)
+### [markdown](FrontEnd/markdown/md.md)
 
 ## 样式
 
-### [css/scss/styles](Style/style.md)
+### [css/scss/styles](FrontEnd/Style/style.md)
 
 ## 操作系统
 
-### [Mac M1](System/Mac-M1.md)
+### [Mac M1](FrontEnd/System/Mac-M1.md)
 
 ## 不常用的
 
