@@ -1,10 +1,13 @@
 # nvm
 > nodejs 版本管理工具
 
-1. Download
- - [nvm](https://github.com/coreybutler/nvm-windows)
+### Windows
+[Nvm install](https://github.com/coreybutler/nvm-windows)
 
-2. Usage
+### Mac m1
+[nvm安装](https://juejin.cn/post/7102388522744545310)
+
+*Usage*
  ```shell
  nvm list
  nvm install <node version>
