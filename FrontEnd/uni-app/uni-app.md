@@ -47,6 +47,24 @@ onReady() {
 
 ```
 
+动态设置页面标题
+```js
+   uni.setNavigationBarTitle({
+       title: '标题'
+   });
+```
+
+返回首页 
+```js
+ 
+
+  onNavigationBarButtonTap: function(e) {
+      uni.switchTab({
+          url: '../../../pages/home/home'
+      })
+  }
+```
+
 ### Tips
 
 - 在onReady中给添加验证规则
