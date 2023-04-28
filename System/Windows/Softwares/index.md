@@ -8,6 +8,9 @@ title: Software in Windows
 4. Everything
 5. Listary
 6. SETUNA
+7. RUSTDESK
+8. Wox
+9. PowerToys
 
 # For Coder
 1. [IDEA & WebStorm](../../Package-Details/IDEA&WebStorm.md)
