@@ -6,7 +6,11 @@
  - [✔] add Pinia (state management)
  - [✔] add ESLint (code vertify) 
  - [✔] add Prettier (code formatting)
-3. Run Project
+3. Add `scss`
+```shell
+npm add -D sass
+```
+4. Run Project
  ```shell
  cd [your-project-name]
  npm install
