@@ -32,3 +32,5 @@ description: Software Introduce
  - 展开方法提示
 + alt + ~
  - git 快捷操作
+
++ ctrl + alt + v 重构变量

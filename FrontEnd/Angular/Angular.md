@@ -30,6 +30,29 @@ ng serve
 npm start 
 ```
 
+## 多项目工作区(version angular>10.9)
+> 多个angular项目共享一个git, node_modules 可用于项目(Project)和组件库(Library)同时开发
+
+```powershell
+// 创建工作区(没有项目),生成基本目录
+ng new firstWorkspace --create-application=false
+
+// 创建项目
+ng generate application first-app
+
+// 创建组件库(组件库拥有自己的package.json)
+ng generate library test-core
+
+// 项目使用组件库(每次组件库更新都要执行此命令)
+ng build test-core
+
+// 启动指定项目(package.json),如果工作区中只有一个项目则默认启动此项目
+ng serve --project="first-app"
+
+// 构建应用程序
+ng build --prod --project="first-app"
+```
+
 ![Angular running track](https://www.runoob.com/wp-content/uploads/2016/09/overview2.png)
 
 ## 组件

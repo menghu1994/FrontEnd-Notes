@@ -1,4 +1,5 @@
 # Array
+# Array
 
 > 数组降维
 

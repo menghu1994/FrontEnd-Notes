@@ -26,7 +26,7 @@ gsap.fromTo(".blue", { x: -100 }, { x: 100, duration: 2 });
 `gsap.timeline()` 按顺序执行动画
 ```js
 const tl = gsap.timeline();
-tl.to(".box1", {duration: 2, x: 100})
-  .to(".box2", {duration: 1, y: 200})
-  .to(".box3", {duration: 3, rotation: 360});
+tl.to(".box1", {duration: 2, x: 100}, 1)
+  .to(".box2", {duration: 1, y: 200}, "-=1.5")
+  .to(".box3", {duration: 3, rotation: 360}, "+=3");
 ```

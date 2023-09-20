@@ -35,6 +35,8 @@ formgroup.setValue({name:'xiaoming'});
     });
 ```
 
+## Active trigger verification
+
 
 ## Reference
 <div id="refer-anchor-1"></div>
